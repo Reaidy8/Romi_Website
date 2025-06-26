@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ROMI | About</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="img/logo.png" alt="Logo" class="nav-logo me-2">
+                    ROMI
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="robot-models.html">Robot Models</a></li>
+                        <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <section class="pt-5 mt-5 about-gradient">
+        <div class="container">
+            
+            <!-- Company Overview -->
+            <div class="row mb-5">
+                <div class="col-md-8 mx-auto text-center">
+                    <h1 class="text-center mb-4">Our Mission</h1>
+                    <p class="text-center mb-5">Advanced Intelligence, Human-Like Intuition. Built with cutting-edge technology to understand, learn, and adapt to your unique needs.</p>
+                    
+                    <!-- Feature Boxes -->
+                    <div class="row mt-4">
+                        <div class="col-md-4 mb-4">
+                            <div class="feature-box p-3 h-100">
+                                <div class="feature-header">
+                                    <img src="img/adaptive-learning.png" alt="Adaptive Learning" class="feature-icon">
+                                    <h4>Adaptive Learning</h4>
+                                </div>
+                                <p>Romi learns from your interactions, continuously improving its responses and actions to better serve your needs.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="feature-box p-3 h-100">
+                                <div class="feature-header">
+                                    <img src="img/natural-interaction.png" alt="Natural Interaction" class="feature-icon">
+                                    <h4>Natural Interaction</h4>
+                                </div>
+                                <p>Communicate using natural language and gestures. Romi understands context and responds appropriately.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="feature-box p-3 h-100">
+                                <div class="feature-header">
+                                    <img src="img/precise-movement.png" alt="Precise Movement" class="feature-icon">
+                                    <h4>Precise Movement</h4>
+                                </div>
+                                <p>Advanced motorized joints provide fluid, human-like movement with exceptional balance and coordination.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="feature-box p-3 h-100">
+                                <div class="feature-header">
+                                    <img src="img/spatial-awareness.png" alt="Spatial Awareness" class="feature-icon">
+                                    <h4>Spatial Awareness</h4>
+                                </div>
+                                <p>Advanced sensors and mapping technology allow Romi to navigate complex environments with ease.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="feature-box p-3 h-100">
+                                <div class="feature-header">
+                                    <img src="img/enhanced-security.png" alt="Enhanced Security" class="feature-icon">
+                                    <h4>Enhanced Security</h4>
+                                </div>
+                                <p>Built-in protocols protect your data and privacy, while physical safeguards ensure safe operation.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="feature-box p-3 h-100">
+                                <div class="feature-header">
+                                    <img src="img/task-assistance.png" alt="Task Assistance" class="feature-icon">
+                                    <h4>Task Assistance</h4>
+                                </div>
+                                <p>From simple reminders to complex multi-step tasks, Romi can assist with a wide range of activities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ROMI Wisdom Intro Paragraph -->
+            <h1 class="text-center mb-4">Our Vision</h1>
+            <p class="text-center mb-3" style="font-size: 1.1rem; color: #444;">
+              At ROMI, we believe robots are our friends, not our enemies. To prove it to you, here's some wisdom to inspire you today,<br>
+              <span style="display:block; margin-top: 0.5em;">from one friend to another:</span>
+            </p>
+            <!-- ROMI Wisdom Quote Card -->
+            <div class="quote-card">
+              <h2>🤖 ROMI's Daily Wisdom</h2>
+              <blockquote id="quote">Loading quote...</blockquote>
+              <p id="author"></p>
+              <div class="error" id="error-message"></div>
+            </div>
+            <!-- End ROMI Wisdom Quote Card -->
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <div class="row mb-5">
+        <h1 class="text-center mb-4">Our Team</h1>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="img/team_member1.png" class="card-img-top rounded-image team-img" alt="Team Member 1">
+                <div class="card-body">
+                    <h5 class="card-title">Ralph Neemtallah</h5>
+                    <p class="card-text">Chief Robotics Engineer</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="img/team_member2.png" class="card-img-top rounded-image team-img" alt="Team Member 2">
+                <div class="card-body">
+                    <h5 class="card-title">Zark Muckerberg</h5>
+                    <p class="card-text">AI Development Lead</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="img/team_member3.png" class="card-img-top rounded-image team-img" alt="Team Member 3">
+                <div class="card-body">
+                    <h5 class="card-title">Melon Usk</h5>
+                    <p class="card-text">Research Director</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section: Reach Out for More Info -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <h2 class="text-center mb-4">Reach Out for More Info</h2>
+        <form>
+          <div class="row mb-3">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <input type="text" class="form-control" placeholder="Full name" required>
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" placeholder="Email address" required>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-12">
+              <textarea class="form-control" rows="4" placeholder="Purpose of your message" required></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 text-center">
+              <button type="submit" class="btn btn-lg btn-primary">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="btn" title="Go to top">↑</button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/scrollTop.js"></script>
+    <!-- Quote card JS moved to script.js -->
+</body>
+</html> 

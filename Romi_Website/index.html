@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ROMI | Home</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="img/logo.png" alt="Logo" class="nav-logo me-2">
+          ROMI
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="robot-models.html">Robot Models</a></li>
+            <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 1. Intro Section -->
+  <section id="intro" class="d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-start">
+          <div class="section-label">
+            <span class="number-circle">01</span>Purpose
+          </div>
+          <h1>Meet Romi: Your Humanoid Assistant</h1>
+          <p class="lead text-dark">Smart. Adaptive. Human-like. Your ultimate companion in daily life and work.</p>
+          <div class="intro-cta">
+            <a href="robot-models.html" class="cylinder-button">
+              <span>Order yours now</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="img/Humanoid Robot.png" alt="Humanoid Robot" class="img-fluid rounded-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Why This Robot -->
+  <section id="why" class="py-5 bg-white">
+    <div class="container">
+      <div class="section-label">
+        <span class="number-circle">02</span>Humanoid
+      </div>
+      <h2 class="text-start mb-5">Why Humanoid</h2>
+      <div class="reasons-container">
+        <div class="reason-card" data-reason="1">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">We're giving AI a way to</h3>
+              <h3 class="card-title">navigate the physical world</h3>
+            </div>
+          </div>
+        </div>
+        <div class="reason-card" data-reason="2">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">We're bringing adaptive intelligence</h3>
+              <h3 class="card-title">to where humans work</h3>
+            </div>
+          </div>
+        </div>
+        <div class="reason-card" data-reason="3">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">We're creating companions,</h3>
+              <h3 class="card-title">not replacements</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Experience the Future -->
+  <section id="future" class="py-5 bg-white text-dark">
+    <div class="container text-center">
+        <h2 class="text-center mb-4">Experience the Future</h2>
+        <p class="text-center lead text-dark fw-bold">Imagine a world where robots assist with care, education, and security. That world is here.</p>
+        <div class="image-background">
+          <img src="img/robot_profile_view.png" alt="Robot Profile View" class="img-fluid mt-4 rounded-image">
+        </div>
+    </div>
+  </section>
+
+  <!-- 3. Specs and Options -->
+  <section id="specs" class="py-5">
+    <div class="container">
+      <div class="section-label">
+        <span class="number-circle">03</span>Specs
+      </div>
+      <h2 class="text-start mb-4">Your Ultimate Life Partner</h2>
+      <div class="specs-highlight">
+        <p class="text-start specs-text">Romi works with you, <span class="highlight">not instead of you</span>. By handling repetitive tasks, improving safety conditions, and learning from every interaction, Romi helps humans focus on what they do best: <span class="highlight">create, solve, and innovate</span>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3.5 Robot Details and Request Access -->
+  <section id="robot-details" class="section-padding bg-white">
+    <div class="container">
+      <div class="row align-items-stretch">
+        <!-- Left Window - Robot Details -->
+        <div class="col-md-6 d-flex">
+          <div class="card h-100 w-100">
+            <div class="card-header gradient-title-1">
+              <h4 class="window-title mb-0">The details</h4>
+            </div>
+            <div class="card-body position-relative d-flex flex-column">
+              <div class="robot-nav-buttons">
+                <button class="nav-btn prev-btn" onclick="changeRobot(-1)">‹</button>
+                <button class="nav-btn next-btn" onclick="changeRobot(1)">›</button>
+              </div>
+              <div class="robot-counter">1/3</div>
+              <div class="robot-details" id="robot-details-content">
+                <!-- ROMI Care Details -->
+                <div class="robot-detail active" data-robot="care">
+                  <h3 class="card-title">👨‍👩‍👧 ROMI Care - Your Wellness Companion</h3>
+                  <div class="specs-list">
+                    <div class="spec-item">
+                      <span class="spec-label"><span class="check-circle">✓</span>Height:</span>
+                      <span class="spec-value">1.5m</span>
+                    </div>
+                    <div class="spec-item">
+                      <span class="spec-label"><span class="check-circle">✓</span>Capacity:</span>
+                      <span class="spec-value">30kg</span>
+                    </div>
+                    <div class="spec-item">
+                      <span class="spec-label"><span class="check-circle">✓</span>Weight:</span>
+                      <span class="spec-value">85kg</span>
+                    </div>
+                    <div class="spec-item">
+                      <span class="spec-label"><span class="check-circle">✓</span>Uptime:</span>
+                      <span class="spec-value">16 hours</span>
+                    </div>
+                    <div class="spec-item">
+                      <span class="spec-label"><span class="check-circle">✓</span>Movement:</span>
+                      <span class="spec-value">1.2 m/s</span>
+                    </div>
+                    <div class="spec-item">
+                      <span class="spec-label"><span class="check-circle">✓</span>Special Features:</span>
+                      <span class="spec-value">Fall detection, medication reminders, emotional support</span>
+                    </div>
+                  </div>
+                  <div class="more-details-btn-container mt-auto">
+                    <a href="robot-models.html" class="more-details-btn">More Details</a>
+                  </div>
+                </div>
+
+                <!-- ROMI Home Details -->
+                <div class="robot-detail" data-robot="home">
+                  <h3 class="card-title">🏡 ROMI Home - Your Smart Organizer</h3>
+                  <div class="specs-list">
+                    <div class="spec-item">
+                      <span class="spec-label"><span class="check-circle">✓</span>Height:</span>
+                      <span class="spec-value">1.6m</span>
+                    </div>
+                    <div class="spec-item">
+                      <span class="spec-label"><span class="check-circle">✓</span>Capacity:</span>
+                      <span class="spec-value">50kg</span>
+                    </div>
+                    <div class="spec-item">
+                      <span class="spec-label"><span class="check-circle">✓</span>Weight:</span>
+                      <span class="spec-value">100kg</span>
+                    </div>
+                    <div class="spec-item">
+                      <span class="spec-label"><span class="check-circle">✓</span>Uptime:</span>
+                      <span class="spec-value">12 hours</span>
+                    </div>
+                    <div class="spec-item">
+                      <span class="spec-label"><span class="check-circle">✓</span>Movement:</span>
+                      <span class="spec-value">1.5 m/s</span>
+                    </div>
+                    <div class="spec-item">
+                      <span class="spec-label"><span class="check-circle">✓</span>Special Features:</span>
+                      <span class="spec-value">Smart home integration, security monitoring, family coordination</span>
+                    </div>
+                  </div>
+                  <div class="more-details-btn-container mt-auto">
+                    <a href="robot-models.html" class="more-details-btn">More Details</a>
+                  </div>
+                </div>
+
+                <!-- ROMI Play Details -->
+                <div class="robot-detail" data-robot="play">
+                  <h3 class="card-title">🎮 ROMI Play - Your Child's Best Friend</h3>
+                  <div class="specs-list">
+                    <div class="spec-item">
+                      <span class="spec-label"><span class="check-circle">✓</span>Height:</span>
+                      <span class="spec-value">1.3m</span>
+                    </div>
+                    <div class="spec-item">
+                      <span class="spec-label"><span class="check-circle">✓</span>Capacity:</span>
+                      <span class="spec-value">20kg</span>
+                    </div>
+                    <div class="spec-item">
+                      <span class="spec-label"><span class="check-circle">✓</span>Weight:</span>
+                      <span class="spec-value">70kg</span>
+                    </div>
+                    <div class="spec-item">
+                      <span class="spec-label"><span class="check-circle">✓</span>Uptime:</span>
+                      <span class="spec-value">8 hours</span>
+                    </div>
+                    <div class="spec-item">
+                      <span class="spec-label"><span class="check-circle">✓</span>Movement:</span>
+                      <span class="spec-value">1.8 m/s</span>
+                    </div>
+                    <div class="spec-item">
+                      <span class="spec-label"><span class="check-circle">✓</span>Special Features:</span>
+                      <span class="spec-value">Educational games, emotional recognition, child-safe design</span>
+                    </div>
+                  </div>
+                  <div class="more-details-btn-container mt-auto">
+                    <a href="robot-models.html" class="more-details-btn">More Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Window - See it for yourself Box -->
+        <div class="col-md-6 d-flex">
+          <div class="card h-100 w-100 d-flex flex-column">
+            <div class="card-header gradient-title-2">
+              <h4 class="window-title mb-0">See it for yourself</h4>
+            </div>
+            <div class="card-body flex-grow-1 d-flex flex-column justify-content-between">
+              <form class="mb-0" id="request-access-form">
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" placeholder="Full name" required id="request-name">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control form-control-lg" placeholder="Email address" required id="request-email">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" placeholder="Company (optional)">
+                </div>
+              </form>
+              <div class="more-details-btn-container mt-auto">
+                <button type="button" class="btn-sm more-details-btn" id="request-access-btn">Request access</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Testimonials -->
+  <section id="testimonials" class="py-5 bg-white">
+    <div class="container">
+      <div class="section-label">
+        <span class="number-circle">04</span>Testimonials
+      </div>
+      <h2 class="text-center">What Our Users Say</h2>
+      <div class="row mt-5">
+        <!-- Testimonial 1 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="testimonial-card">
+            <div class="stars">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <p class="testimonial-text">"Romi Care has been a game-changer for my elderly mother. The medication reminders and fall detection give us peace of mind. She loves having someone to talk to during the day."</p>
+            <div class="user-info">
+              <strong>Joseph Bou Harb</strong>
+              <span class="user-title">Busy Son </span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Testimonial 2 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="testimonial-card">
+            <div class="stars">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <p class="testimonial-text">"Romi Home has transformed our household. It manages our smart devices, coordinates family schedules, and even helps the kids with homework. It's like having a personal assistant!"</p>
+            <div class="user-info">
+              <strong>Elias Al Zaghrini</strong>
+              <span class="user-title">Tech-Savvy Parent</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Testimonial 3 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="testimonial-card">
+            <div class="stars">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <p class="testimonial-text">"My 8-year-old daughter adores Romi Play! It's educational, entertaining, and safe. The emotional recognition feature is incredible - it really understands when she's feeling down."</p>
+            <div class="user-info">
+              <strong>Najah Roula</strong>
+              <span class="user-title">Concerned Parent</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Testimonial 4 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="testimonial-card">
+            <div class="stars">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <p class="testimonial-text">"As a senior living alone, Romi Care has been my lifeline. It's not just a robot - it's a companion that keeps me safe and engaged. The voice is so natural and comforting."</p>
+            <div class="user-info">
+              <strong>Maurice Saab</strong>
+              <span class="user-title">Senior Resident</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Legal & Disclaimers -->
+  <section id="legal" class="py-5 bg-light">
+    <div class="container">
+      <div class="joke-box">
+        <h3>Joke of the Day 😂</h3>
+        <p id="joke-of-day">Loading joke...</p>
+        <p id="joke-of-day-author"></p>
+        <button id="get-new-joke-btn" class="joke-btn">Get New Joke</button>
+      </div>
+      <div class="legal-content">
+        <p class="legal-text">
+          1. Available for Qualified Purchasers only. Qualified Purchasers purchasing an eligible Humanoid Robot ("Eligible Product") with eligible accessories ("Promotion Product") from a Qualifying Location through December 31, 2025 will receive Promotion Savings (up to $399, not to exceed the price of the Promotion Product). Customers will be charged for all items in their cart, including the Promotion Product. Only one Promotion Product per Eligible Product per Qualified Purchaser. Offer subject to availability. While supplies last. Additional restrictions apply. View full offer terms here.
+        </p>
+        
+        <p class="legal-text">
+          2. Safety and Compliance: All Humanoid Robotics products have received necessary safety certifications and regulatory approvals. ROMI Care, ROMI Home, and ROMI Play models are designed for specific use cases and environments. ROMI Care is intended for healthcare assistance and elderly care applications. ROMI Home is designed for residential use and smart home integration. ROMI Play is specifically designed for child interaction and educational purposes. All models require proper setup, calibration, and regular maintenance. Users must be 18 years or older to operate ROMI Care and ROMI Home models. ROMI Play requires adult supervision for children under 12. The emotional recognition and AI interaction features are intended to enhance user experience and should not replace professional medical, psychological, or educational services.
+        </p>
+        
+        <p class="legal-text">
+          3. Trade-in values will vary based on the condition, year, and configuration of your eligible trade-in device or robot. Not all devices are eligible for credit. You must be at least the age of majority to be eligible to trade in for credit or for a Humanoid Robotics Gift Card. Trade-in value may be applied toward qualifying new device purchase, or added to a Humanoid Robotics Gift Card. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In-store trade-in requires presentation of a valid photo ID (local law may require saving this information). Offer may not be available in all stores, and may vary between in-store and online trade-in. Some stores may have additional requirements. Humanoid Robotics or its trade-in partners reserve the right to refuse, cancel, or limit quantity of any trade-in transaction for any reason.
+        </p>
+        
+        <p class="legal-text">
+          AI and Machine Learning: ROMI's artificial intelligence features are available on all ROMI Care, ROMI Home, and ROMI Play models with the latest firmware and software updates. Supported languages include English, French, German, Italian, Portuguese (Brazil), Spanish, Japanese, Korean, and Chinese (Simplified). More languages are coming over the course of the year, including Arabic and Vietnamese. Some features may not be available in all regions or languages. AI capabilities require internet connectivity and may be subject to data usage charges.
+        </p>
+        
+        <p class="legal-text">
+          A subscription is required for ROMI Premium Services, ROMI Educational Content, and ROMI Health Monitoring.
+        </p>
+        
+        <p class="legal-text">
+          Features are subject to change. Some features, applications, and services may not be available in all regions or all languages. ROMI robots are designed to work with humans, not replace them. Professional services should always be consulted for medical, legal, or critical decision-making matters.
+        </p>
+        
+        <div class="footer-links">
+          <div class="row">
+            <div class="col-md-3">
+              <h6>Shop and Learn</h6>
+              <ul class="footer-list">
+                <li><a href="robot-models.html">Robot Models</a></li>
+                <li><a href="robot-models.html#care">ROMI Care</a></li>
+                <li><a href="robot-models.html#home">ROMI Home</a></li>
+                <li><a href="robot-models.html#play">ROMI Play</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Gift Cards</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h6>Services</h6>
+              <ul class="footer-list">
+                <li><a href="#">ROMI Premium</a></li>
+                <li><a href="#">Health Monitoring</a></li>
+                <li><a href="#">Educational Content</a></li>
+                <li><a href="#">Smart Home Integration</a></li>
+                <li><a href="#">Technical Support</a></li>
+                <li><a href="#">Training Programs</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h6>For Business</h6>
+              <ul class="footer-list">
+                <li><a href="#">Healthcare Solutions</a></li>
+                <li><a href="#">Educational Institutions</a></li>
+                <li><a href="#">Senior Care Facilities</a></li>
+                <li><a href="#">Corporate Partnerships</a></li>
+                <li><a href="#">Research & Development</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h6>About Humanoid Robotics</h6>
+              <ul class="footer-list">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html">Newsroom</a></li>
+                <li><a href="about.html">Leadership</a></li>
+                <li><a href="about.html">Careers</a></li>
+                <li><a href="about.html">Privacy Policy</a></li>
+                <li><a href="about.html">Terms of Use</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p class="legal-text">
+            More ways to shop: Find a Humanoid Robotics Store or authorized retailer near you. Or call +961-01-234-ROMI-HELP (+961-01-234-567).
+          </p>
+          <p class="legal-text">
+            Lebanon | Copyright © 2025 Humanoid Robotics Inc. All rights reserved. | Privacy Policy | Terms of Use | Sales and Refunds | Legal | Site Map
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" class="btn" title="Go to top">↑</button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/scrollTop.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const requestAccessBtn = document.getElementById('request-access-btn');
+      if (requestAccessBtn) {
+        requestAccessBtn.addEventListener('click', async function(e) {
+          e.preventDefault();
+          const name = document.getElementById('request-name').value.trim();
+          const email = document.getElementById('request-email').value.trim();
+          if (!name || !email) {
+            alert('Please fill in your full name and email address.');
+            return;
+          }
+          const params = new URLSearchParams({ name, email });
+          window.location.href = `profile.html?${params.toString()}#register`;
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
